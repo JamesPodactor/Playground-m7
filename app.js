@@ -77,11 +77,11 @@
 //   src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
 // />
 
-// const pattern = /^<img src="(.{1,}\.(jpg|gif|pdf|jpeg|png))"\/>$/;
+// const pattern = /(https|http):\/\/.{1,}(jpg|png|gif|webp|jpeg|svg)/gim
 
-// var codeLines = '<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"/>';
+// var text = '<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"/>';
 
-// console.log(codeLines.match(pattern));
+// console.log(text.match(pattern));
 //-----------------------------------------------------------------------------------
 
 // Caso 2
@@ -100,7 +100,7 @@
 //     </html>
 // '
 
-//NO SE PONER EL TEXTO APTO EN VS, PERO EL REGEX SERÍA: /^<img src="(.{1,}\.(png|jpg))"\/>$/gim
+//NO SE PONER EL TEXTO APTO EN VS, PERO EL REGEX SERÍA: /(https|http):\/\/.{1,}(jpg|png|gif|webp|jpeg|svg)/gim
 //-----------------------------------------------------------------------------------
 
 
